@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    min-height: 1080px;
+}
+
+.col>a {
+    height: 80%;
+}
+
+  .btn{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #bea5a5;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    animation: fadeIn 5s;
+  }
+  .btn::before{
+    background: rgb(235, 234, 234);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+
+  .btn4::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+  .btn4:hover::before{
+    height: 380%;
+    width: 130%;
+  }
+
+/*Secção da companhia*/
+.backgroundCompany {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/indexbackgroundEnigma.jpg);
+    min-height: 1080px;
+    position: absolute;
+    z-index: -1;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+
+.companyTitle {
+    font-size: 64px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.companyTitleSmall {
+    font-size: 42px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.companyTitleMobile{
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.companyTitle2 {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    animation: fadeIn 10s;
+    color:grey
+}
+
+.companyTitle2Mobile {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    animation: fadeIn 10s;
+    color:grey
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.companyText {
+    padding-top: 5%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 380;
+    font-size: 17px;
+}
+
+/*Secção do primeiro serviço*/
+.backgroundService1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(18, 71, 119);
+    background: linear-gradient(90deg, rgba(18, 71, 119, 1) 0%, rgba(17, 104, 222, 1) 50%, rgba(2, 0, 36, 1) 100%);
+    min-height: 1080px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    scroll-margin-top: 9em;
+}
+
+.service1Title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+
+}
+
+.service1Text {
+    text-align: justify;
+}
+
+/*Secção do segundo serviço*/
+.backgroundService2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    scroll-margin-top: 9em;
+}
+
+.service1Title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+}
+
+.service1Text {
+    text-align: justify;
+}
+
+.service1Text0 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.service2Title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+}
+
+.service2Text {
+    text-align: justify;
+}
+
+.service2Text1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color:rgb(18, 71, 119)
+}
+
+.service2Text2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.service2Text4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.service2Text6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}

@@ -1,0 +1,42 @@
+/*header*/
+.header{
+    position: sticky;
+    background-image: url(../images/header.png);
+    background-size: cover;
+    color: #ffffff;
+    padding: 12px;
+    display:inline-block;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 10;
+  }
+
+  .headertitle{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 43px;
+    font-style: normal;
+    margin-bottom: 0;
+  }
+
+  .headerText{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    color: blanchedalmond;
+  }
+
+  li {
+    list-style-type: none;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: blanchedalmond;
+}
+
+.active{
+  background-color:blanchedalmond !important;
+  color: black !important;
+}
+
