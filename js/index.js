@@ -50,7 +50,7 @@ const dataService1 = {
     },
     português: {
         service1Text0: "Na ENIGMA INFOSEC, oferecemos os seguintes serviços de TI:",
-        service1Text1: "Administração do sistema: gestão e otimização da sua infraestrutura de IT para operações com um bom funcionamento.",
+        service1Text1: "Administração de sistemas: gestão e otimização da sua infraestrutura de IT para operações com um bom funcionamento.",
         service1Text2: "Integração na Cloud: integração perfeita com AWS, Azure ou Google Cloud para flexibilidade.",
         service1Text3: "Compliance Support: Verificamos os requisitos regulatórios para garantir que os padrões do setor são atendidos.",
         service1Text4: "Disaster Recovery: Criação de planos para recuperação rápida e tempo de inatividade mínimo.",
