@@ -20,6 +20,14 @@
     margin-bottom: 0;
   }
 
+  .headertitlePhone{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 27px;
+    font-style: normal;
+    margin-bottom: 0;
+  }
+
   .headerText{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
