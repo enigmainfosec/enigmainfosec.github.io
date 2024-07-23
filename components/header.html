@@ -9,9 +9,14 @@
         if (winWidth < 1000) {
             $('.desktopHeader').hide();
             $('.phoneHeader').show();
+        } else if (winWidth < 1560) {
+            $('.desktopHeader').show();
+            $('.phoneHeader').hide();
+            $('.languageHead').hide();
         } else {
             $('.desktopHeader').show();
             $('.phoneHeader').hide();
+            $('.languageHead').show();
         }
 
         $(window).resize(function () {
@@ -19,9 +24,14 @@
             if (winWidth < 1000) {
                 $('.desktopHeader').hide();
                 $('.phoneHeader').show();
+            } else if (winWidth < 1560) {
+                $('.desktopHeader').show();
+                $('.phoneHeader').hide();
+                $('.languageHead').hide();
             } else {
                 $('.desktopHeader').show();
                 $('.phoneHeader').hide();
+                $('.languageHead').show();
             }
 
         });
@@ -34,8 +44,9 @@
         <img src="images/logo.png" class="logo desktopHeader">
     </div>
     <div class="col">
-        <h2 class="headertitle">ENIGMA INFOSEC</h2>
-        <h6 class="headerText">Professional Services</h6>
+        <h2 class="headertitle desktopHeader">ENIGMA INFOSEC</h2>
+        <h2 class="headertitlePhone phoneHeader">ENIGMA INFOSEC</h2>
+        <h6 class="headerText desktopHeader">Professional Services</h6>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid desktopHeader">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -100,14 +111,14 @@
                     <a class="dropdown-item" id="mobileHomeHead" aria-current="page" href="index.html"></a>
                 </li>
                 <li class="nav-item dropdown" id="mobileServicesDropdown">
-                    <a class="nav-link dropdown-toggle dropdown-item ms-3" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle dropdown-item ms-3" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Serviços
                     </a>
                     <ul class="dropdown-menu w-100">
                         <li><a class="dropdown-item mobileServ1head" href="#service1Content"></a></li>
                         <li><a class="dropdown-item mobileServ2head" href="#service2Content">Cybersecurity as a
-                            Service</a></li>
+                                Service</a></li>
                     </ul>
                 </li>
                 <li>
