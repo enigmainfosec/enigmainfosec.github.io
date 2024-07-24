@@ -13,7 +13,7 @@ body {
     height: 80%;
 }
 
-  .btn{
+.btn {
     position: relative;
     display: block;
     color: white;
@@ -26,27 +26,29 @@ body {
     overflow: hidden;
     transition: 1s all ease;
     animation: fadeIn 5s;
-  }
-  .btn::before{
+}
+
+.btn::before {
     background: rgb(235, 234, 234);
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
     transition: all 0.6s ease;
-  }
+}
 
-  .btn4::before{
+.btn4::before {
     width: 100%;
     height: 0%;
-    transform: translate(-50%,-50%) rotate(-45deg);
-  }
-  .btn4:hover::before{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn4:hover::before {
     height: 380%;
     width: 130%;
-  }
+}
 
 /*Secção da companhia*/
 .backgroundCompany {
@@ -76,7 +78,7 @@ body {
     margin-bottom: 0px;
 }
 
-.companyTitleMobile{
+.companyTitleMobile {
     font-size: 24px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
@@ -88,7 +90,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     animation: fadeIn 10s;
-    color:grey
+    color: grey
 }
 
 .companyTitle2Mobile {
@@ -96,13 +98,18 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     animation: fadeIn 10s;
-    color:grey
+    color: grey
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .companyText {
     padding-top: 5%;
@@ -134,8 +141,21 @@ body {
 
 }
 
+.service1TitleMobile {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+
+}
+
 .service1Text {
-    text-align: justify;
+    text-align: left;
+}
+
+.desktopService1Img {
+    max-width: 500px;
+    width: 100%;
 }
 
 /*Secção do segundo serviço*/
@@ -151,16 +171,6 @@ body {
     scroll-margin-top: 9em;
 }
 
-.service1Title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: 72px;
-}
-
-.service1Text {
-    text-align: justify;
-}
-
 .service1Text0 {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
@@ -173,15 +183,21 @@ body {
     font-size: 72px;
 }
 
+.service2TitleMobile {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+}
+
 .service2Text {
-    text-align: justify;
+    text-align: left;
 }
 
 .service2Text1 {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 24px;
-    color:rgb(18, 71, 119)
+    color: rgb(18, 71, 119)
 }
 
 .service2Text2 {
@@ -200,4 +216,22 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 18px;
+}
+
+.desktopService2Img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.buttonServices {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.buttonServices:hover {
+    background-color: #0d6efd;
+    color: white;
 }
