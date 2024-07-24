@@ -30,34 +30,64 @@
             $(document).ready(function () {
                 winWidth = $(window).width();
                 if (winWidth > 1580) {
-                    $('.companyTitle').show();
-                    $('.companyTitleSmall').hide();
-                    $('.companyTitle2').show().animate();
-                    $('.companyTitle2Mobile').hide()
+                        $('.companyTitle').show();
+                        $('.companyTitleSmall').hide();
+                        $('.companyTitle2').show().animate();
+                        $('.companyTitle2Mobile').hide()
 
-                    $('.desktopTitle').show();
-                    $('.mobileTitle').hide();
-                    $('.desktopImages').show();
-                    $('.mobileImages').hide();
-                } else if (winWidth > 1060) {
-                    $('.companyTitle').hide();
-                    $('.companyTitleSmall').show();
-                    $('.companyTitle2').show().animate();
-                    $('.companyTitle2Mobile').hide()
+                        $('.desktopTitle').show();
+                        $('.mobileTitle').hide();
+                        $('.desktopImages').show();
+                        $('.mobileImages').hide();
 
-                    $('.desktopTitle').show();
-                    $('.mobileTitle').hide();
-                    $('.desktopImages').show();
-                    $('.mobileImages').hide();
-                } else {
-                    $('.companyTitle2').hide();
-                    $('.companyTitle2Mobile').show().animate();
+                        $('.service1Title').show();
+                        $('.service1TitleMobile').hide();
+                        $('.largeDesktopService1Img').show();
+                        $('.desktopService1Img').hide();
 
-                    $('.desktopTitle').hide();
-                    $('.mobileTitle').show();
-                    $('.desktopImages').hide();
-                    $('.mobileImages').show();
-                }
+                        $('.service2Title').show();
+                        $('.service2TitleMobile').hide();
+                        $('.largeDesktopService2Img').show();
+                        $('.desktopService2Img').hide();
+                    } else if (winWidth > 1060) {
+                        $('.companyTitle').hide();
+                        $('.companyTitleSmall').show();
+                        $('.companyTitle2').show().animate();
+                        $('.companyTitle2Mobile').hide()
+
+                        $('.desktopTitle').show();
+                        $('.mobileTitle').hide();
+                        $('.desktopImages').show();
+                        $('.mobileImages').hide();
+
+                        $('.service1Title').show();
+                        $('.service1TitleMobile').hide();
+                        $('.largeDesktopService1Img').show();
+                        $('.desktopService1Img').hide();
+
+                        $('.service2Title').show();
+                        $('.service2TitleMobile').hide();
+                        $('.largeDesktopService2Img').show();
+                        $('.desktopService2Img').hide();
+                    } else {
+                        $('.companyTitle2').hide();
+                        $('.companyTitle2Mobile').show().animate();
+
+                        $('.desktopTitle').hide();
+                        $('.mobileTitle').show();
+                        $('.desktopImages').hide();
+                        $('.mobileImages').show();
+
+                        $('.service1Title').hide();
+                        $('.service1TitleMobile').show();
+                        $('.largeDesktopService1Img').hide();
+                        $('.desktopService1Img').show();
+
+                        $('.service2Title').hide();
+                        $('.service2TitleMobile').show();
+                        $('.largeDesktopService2Img').hide();
+                        $('.desktopService2Img').show();
+                    }
 
                 $(window).resize(function () {
                     winWidth = $(window).width();
@@ -72,6 +102,16 @@
                         $('.mobileTitle').hide();
                         $('.desktopImages').show();
                         $('.mobileImages').hide();
+
+                        $('.service1Title').show();
+                        $('.service1TitleMobile').hide();
+                        $('.largeDesktopService1Img').show();
+                        $('.desktopService1Img').hide();
+
+                        $('.service2Title').show();
+                        $('.service2TitleMobile').hide();
+                        $('.largeDesktopService2Img').show();
+                        $('.desktopService2Img').hide();
                     } else if (winWidth > 1060) {
                         $('.companyTitle').hide();
                         $('.companyTitleSmall').show();
@@ -82,6 +122,16 @@
                         $('.mobileTitle').hide();
                         $('.desktopImages').show();
                         $('.mobileImages').hide();
+
+                        $('.service1Title').show();
+                        $('.service1TitleMobile').hide();
+                        $('.largeDesktopService1Img').show();
+                        $('.desktopService1Img').hide();
+
+                        $('.service2Title').show();
+                        $('.service2TitleMobile').hide();
+                        $('.largeDesktopService2Img').show();
+                        $('.desktopService2Img').hide();
                     } else {
                         $('.companyTitle2').hide();
                         $('.companyTitle2Mobile').show().animate();
@@ -90,6 +140,16 @@
                         $('.mobileTitle').show();
                         $('.desktopImages').hide();
                         $('.mobileImages').show();
+
+                        $('.service1Title').hide();
+                        $('.service1TitleMobile').show();
+                        $('.largeDesktopService1Img').hide();
+                        $('.desktopService1Img').show();
+
+                        $('.service2Title').hide();
+                        $('.service2TitleMobile').show();
+                        $('.largeDesktopService2Img').hide();
+                        $('.desktopService2Img').show();
                     }
 
                 });
@@ -1012,6 +1072,12 @@
             <div class="col">
                 <div class="row m-3 p-3">
                     <h2 class="service1Title text-light">IT Professional Services</h2>
+                    <h2 class="service1TitleMobile text-light">IT Professional Services</h2>
+                </div>
+                <div class="row ms-3 me-3 ps-3 pe-3 desktopService1Img">
+                    <div>
+                        <img src="images/ipas.jpg" class="rounded-3 img-fluid"></img>
+                    </div>
                 </div>
                 <div class="row m-3 p-3 text-light service1Text">
                     <p class="service1Text0"></p>
@@ -1025,15 +1091,15 @@
                     <p class="service1Text8"></p>
                     </p>
 
-                    <div class="bg-primary  m-2 p-2">
-                        <a class="nav-link text-light text-center" aria-current="page"
-                            href="https://calendly.com/enigmainfosec" target="_blank">Book a meeting with Us</a>
+                </div>
+                <div class="row justify-content-center m-3 p-3">
+                    <div class="col-md-4">
+                        <button class="buttonServices rounded-3 mt-3" role="button">Book a meeting with Us</button>
                     </div>
-
                 </div>
             </div>
-            <div class="col col-md-auto">
-                <img src="images/ipas.jpg" class="itemService1Image rounded-3 img-fluid"></img>
+            <div class="col-md-4 largeDesktopService1Img">
+                <img src="images/ipas.jpg" class="rounded-3 img-fluid"></img>
             </div>
         </div>
 
@@ -1042,12 +1108,18 @@
     <div class="content">
         <div class="backgroundService2" id="service2Content"></div>
         <div class="row p-4">
-            <div class="col col-md-auto">
+            <div class="col col-md-auto largeDesktopService2Img">
                 <img src="images/caas.jpg" class="itemService2Image rounded-3 img-fluid"></img>
             </div>
             <div class="col">
                 <div class="row m-3 p-3">
                     <h2 class="service2Title">Cybersecurity as a Service</h2>
+                    <h2 class="service2TitleMobile">Cybersecurity as a Service</h2>
+                </div>
+                <div class="row ms-3 me-3 ps-3 pe-3 desktopService2Img">
+                    <div>
+                        <img src="images/caas.jpg" class="itemService2Image rounded-3 img-fluid"></img>
+                    </div>
                 </div>
                 <div class="row m-3 p-3 service2Text">
                     <p class="service2Text1"></p>
@@ -1058,9 +1130,11 @@
                     <p class="service2Text6"></p>
                     <p class="service2Text7"></p>
                     </p>
-                    <div class="bg-primary  m-2 p-2">
-                        <a class="nav-link text-light text-center" aria-current="page"
-                            href="https://calendly.com/enigmainfosec" target="_blank">Book a meeting with Us</a>
+                    
+                </div>
+                <div class="row justify-content-center m-3 p-3">
+                    <div class="col-md-4">
+                        <button class="buttonServices rounded-3 mt-3" role="button">Book a meeting with Us</button>
                     </div>
                 </div>
             </div>
