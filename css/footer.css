@@ -1,37 +1,37 @@
 .footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-image: url(../images/header.png);
-    background-size: cover;
-    color: white;
-    
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../images/header.png);
+  background-size: cover;
+  color: white;
+  
 }
 
 .titleRow{
-    text-align: center;
+  text-align: center;
 }
 
 .footertitle{
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic; 
-    color: blanchedalmond;
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic; 
+  color: blanchedalmond;
+}
 
-  .footerContactUs {
-    padding-bottom: 5px;
-  }
+.footerContactUs {
+  padding-bottom: 5px;
+}
 
-  .footerSubtitle {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: x-large;
-  }
+.footerSubtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: x-large;
+}
 
-  .footerText {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.footerText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
