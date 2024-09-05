@@ -28,6 +28,22 @@
         $(function () {
             $("#header").load("components/header.html");
             $("#footer").load("components/footer.html");
+            $(document).ready(function () {
+                winWidth = $(window).width();
+                if (winWidth > 1060) {
+                    $('.aboutUsImage').show();
+                } else {
+                    $('.aboutUsImage').hide();
+                }
+                $(window).resize(function () {
+                    winWidth = $(window).width();
+                    if (winWidth > 1060) {
+                        $('.aboutUsImage').show();
+                    } else {
+                        $('.aboutUsImage').hide();
+                    }
+                });
+            });
         });
     </script>
 
@@ -35,27 +51,35 @@
 
 <body>
     <header class="header" id="header"></header>
-    
+
     <div class="content">
         <div class="background"></div>
         <div class="row p-4 me-4">
             <div class="col">
                 <h1 class="title ms-4">ABOUT US</h1>
                 <div class="companyText m-3 p-4">
-                    <p class="companyText1">At ENIGMA INFOSEC, we are dedicated to safeguarding your digital world with precision and expertise.
-                        As a leading provider of IT professional services, we specialize in delivering robust, 
+                    <p class="companyText1">At ENIGMA INFOSEC, we are dedicated to safeguarding your digital world with
+                        precision and expertise.
+                        As a leading provider of IT professional services, we specialize in delivering robust,
                         reliable, and secure solutions tailored to meet the unique needs of our clients. </p>
 
-                    <p class="companyText2">Our team of certified IT professionals combines extensive industry knowledge with innovative technologies to offer a comprehensive suite of managed and unmanaged services. 
-                        Whether it's system administration, cybersecurity, cloud integration, or compliance support, 
-                        we have the expertise to ensure your IT infrastructure is optimized, protected, and aligned with your business goals. </p>
+                    <p class="companyText2">Our team of certified IT professionals combines extensive industry knowledge
+                        with innovative technologies to offer a comprehensive suite of managed and unmanaged services.
+                        Whether it's system administration, cybersecurity, cloud integration, or compliance support,
+                        we have the expertise to ensure your IT infrastructure is optimized, protected, and aligned with
+                        your business goals. </p>
 
-                    <p class="companyText3">With a customer-centric approach, we prioritize building long-term relationships based on trust, transparency, and exceptional service. We understand that every business is unique, 
-                        which is why we take the time to understand your specific challenges and objectives to deliver personalized solutions that drive success.</p>
+                    <p class="companyText3">With a customer-centric approach, we prioritize building long-term
+                        relationships based on trust, transparency, and exceptional service. We understand that every
+                        business is unique,
+                        which is why we take the time to understand your specific challenges and objectives to deliver
+                        personalized solutions that drive success.</p>
 
-                    <p class="companyText4">At our company, we believe that your obstacles should end when we begin. Let us partner with you to navigate the complexities of the digital landscape and empower your business with reliable and secure IT solutions. 
+                    <p class="companyText4">At our company, we believe that your obstacles should end when we begin. Let
+                        us partner with you to navigate the complexities of the digital landscape and empower your
+                        business with reliable and secure IT solutions.
                         Choose us as your trusted IT partner, and experience the ENIGMA INFOSEC difference.</p>
-                    <img src="images/BarraCofinan_Designacao.png" class="w-100"></img>
+                    <img src="images/BarraCofinan_Designacao.png" class="img-fluid"></img>
                 </div>
             </div>
             <div class="col-md-auto">
